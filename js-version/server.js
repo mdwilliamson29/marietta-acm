@@ -54,7 +54,7 @@ app.post('/process_image', async (req, res) => {
             role: "user",
             content: [{
                 type: "text",
-                text: "Whats in this image? Be descriptive. For each significant item recognized, wrap this word in <b> tags. Example: The image shows a <b>man</b> in front of a neutral-colored <b>wall</b>. He has short hair, wears <b>glasses</b>, and is donning a pair of over-ear <b>headphones</b>. ... Also output an itemized list of objects recognized, wrapped in <br> and <b> tags with label <br><b>Objects:."
+                text: "Whats in this image? Be concise. For each significant item recognized, wrap this word in <b> tags. Objects:."
                 // The text prompt includes instructions for the OpenAI model to
                 // describe the image and format the response in a certain way.
             }, {

@@ -7,26 +7,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="content-container">
-        <div id="webcam-container">
-            <video id="webcam" autoplay playsinline width="640" height="480"></video>
-            <canvas id="canvas" width="640" height="480" style="display: none;"></canvas>
-            <button id="capture">Capture</button>
-            <button id="switch-camera">Switch Camera</button>
+    <div style="flex-direction: column; align-items: center;">
+        <div style="display: flex; justify-content: center; padding-bottom: 12px;">
+            <img src="imgs/mclogo.png" width="30%">
         </div>
 
-        <div id="chatbox">
-            <!-- Loader will go here, hidden initially -->
-            <div class="loader" style="display: none;"></div>
-            <!-- Chat messages with HTML tags will be appended here -->
-        </div>     
-    </div>
+        <div id="content-container">
+            <div id="webcam-container">
+                <video id="webcam" autoplay playsinline width="640" height="480"></video>
+                <canvas id="canvas" width="640" height="480" style="display: none;"></canvas>
+                <button id="capture">Capture</button>
+                <button id="switch-camera">Switch Camera</button>
+            </div>
 
-    <script src="webcam.js"></script>
+            <div id="chatbox">
+                <!-- Loader will go here, hidden initially -->
+                <div class="loader" style="display: none;"></div>
+                <!-- Chat messages with HTML tags will be appended here -->
+            </div>     
+        </div>
 
-    <div id="footer">
-        Webcam is local on your browser, and <b>no images or keys are saved</b> by this demo.<br>
-        Dev'd by <a href="https://twitter.com/BenjaminDEKR">Benjamin De Kraker (Follow on X)</a>
+        <script src="webcam.js"></script>
+
+        <div id="footer">
+            Webcam is local on your browser, and <b>no images or keys are saved</b> by this demo.<br>
+            Dev'd by <a href="https://twitter.com/BenjaminDEKR">Benjamin De Kraker (Follow on X)</a>
+        </div>
     </div>
 </body>
 </html>
