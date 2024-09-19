@@ -49,7 +49,7 @@ app.post('/process_image', async (req, res) => {
     // Construct the payload for the OpenAI API, including the model to use, the
     // message with a prompt for the image description and the base64 image data.
     const payload = {
-        model: "gpt-4-vision-preview",
+        model: "gpt-4o",
         messages: [{
             role: "user",
             content: [{
