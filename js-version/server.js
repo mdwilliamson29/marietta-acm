@@ -54,7 +54,7 @@ app.post('/process_image', async (req, res) => {
             role: "user",
             content: [{
                 type: "text",
-                text: "Whats in this image? Be concise. For each significant item recognized, wrap this word in <b> tags. Objects:."
+                text: "Act as object identifier and Identify only the object that is been held by the hand shown in picture. You answer/reply should be in this format nothing else (Object Name : Object descriptive Features) and if no hand or no object is shown in picture just reply this ( No object is shown), if multiple object state in row by numbers. "
                 // The text prompt includes instructions for the OpenAI model to
                 // describe the image and format the response in a certain way.
             }, {
