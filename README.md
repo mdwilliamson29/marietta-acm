@@ -10,10 +10,8 @@ Maretta-WebcamGPT-Vision is a lightweight web application that enables users to 
 Before you begin, ensure you have met the following requirements:
 
 - You have a modern web browser.
-- For the PHP version: You have a server with PHP support and cURL enabled.
-- For the Node.js version: You have Node.js and npm installed.
-- For the Python/Flask version: You have Python and Flask installed.
-- You have obtained an API key from OpenAI for GPT-4 Vision API usage.
+- You have Node.js and npm installed. https://nodejs.org/en npm install -g npm
+- You have obtained an API key from OpenAI for GPT-4o usage.
 
 ## Installation
 
